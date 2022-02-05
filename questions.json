@@ -1,0 +1,18 @@
+{
+    "questions": [
+        {
+            "structure":{
+                "type": "radiobutton",
+                "title": "1",
+                "question": "Whats your age?",
+                "select" : ["10-15", "16-18", "18-25", "25-30", "30+"]
+                },
+            "style":{
+                "color": "black",
+                "background": "white",
+                "font-size": "15px",
+                "font-weight": "bold" 
+                }  
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+.short_Answer{
+    font-family: Poppins;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #4d4d4d;
+    outline: 0;
+    color: #4d4d4d;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    font-size: 18px;
+}
+
+.short_Answer::placeholder{
+    color: transparent;
+}
+.from_Label{
+    font-family: Poppins;
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    color: #4d4d4d;
+    font-size: 18px;
+
+}
+.short_Answer:focus{
+    padding-bottom: 6px;
+    border-width:3px;
+    border-color: #757575;
+}
+
+.short_Answer:placeholder-shown ~ .from_Label{
+    cursor: text;
+    top: 20px;
+}
+.from_Group{
+    position: relative;
+    padding: 15px 0 0;
+    margin: 10px auto;
+    width: 80%;
+}
+
+.short_Answer:focus ~ .from_Label{
+    position: absolute;
+    top: 0px;
+    color: #757575;
+    display: block;
+    transition: 0.2s;
+}
