@@ -27,7 +27,7 @@
 .short_Answer:focus{
     padding-bottom: 6px;
     border-width:3px;
-    border-color: #757575;
+    border-color: white;
 }
 
 .short_Answer:placeholder-shown ~ .from_Label{
@@ -44,7 +44,7 @@
 .short_Answer:focus ~ .from_Label{
     position: absolute;
     top: 0px;
-    color: #757575;
+    color: white;
     display: block;
     transition: 0.2s;
 }
