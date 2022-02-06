@@ -9,7 +9,7 @@
     margin: 10px auto;
     padding: 10px 20px 10px 30px;
     border-radius: 10px;
-    background: linear-gradient(180deg,#C152FF 0%,#f2295b 100%);
+    background: linear-gradient(to right,#C152FF ,#f2295b);
     box-shadow: 1px 1px 1px 1px;
     /*border: 1px solid black;*/
 }
@@ -25,7 +25,7 @@ body{
     margin: 10px auto;
     border-radius: 10px;
     box-shadow: 0.3px 0.3px 0.3px 0.3px;
-    background: linear-gradient(180deg,#C152FF 0%,#f2295b 100%);
+    background: linear-gradient(to right,#C152FF ,#f2295b);
 
 }
 .question{
