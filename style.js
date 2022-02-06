@@ -1,9 +1,10 @@
 function set_Style(){
     width = window.innerWidth;
     height = window.innerHeight;
+    console.log(width);
     if (width < 700){
-        document.getElementsByClassName(".grid_Div").style.width = `${width/2}px`;
-        document.getElementsByClassName(".title").style = "font-size: 20px";
+        document.getElementsByClassName("grid_Div").style.width = `${width/2}px`;
+        document.getElementsByClassName("title").style = "font-size: 20px";
     }
 }
 
