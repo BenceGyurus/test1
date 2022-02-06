@@ -178,6 +178,13 @@ function query_Datas(){
     req.send();
 }
 
+function element_To_Errors(errors){
+    document.getElementById("errors").innerHTML = ""
+    if (errors.length){
+        document.getElementById("errors").innerHTML = errors[0]    
+    }    
+} 
+
 function send(){
     let errors = [];
     if (window.answers){
@@ -197,6 +204,7 @@ function send(){
                 errors.push("Az összes mező kitöltése kötelező");
             }
         }
+        element_To_Errors(errors);
         if (!errors.length){
             say_Thanks();
             //element_The_Result();
@@ -215,6 +223,8 @@ function say_Thanks(){
 function element_The_Result(){
     document.getElementById("result").innerHTML = JSON.stringify(window.answers);
     document.getElementById("result").style.display = "block";
+    document.getElementById("header").remove;
+    document.getElementById("send").remove
 }
 
 query_Datas();

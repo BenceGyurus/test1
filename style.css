@@ -89,3 +89,12 @@ body{
     min-width: 280px;
     margin: 10px auto;
 }
+
+#errors{
+    width: 80%;
+    max-width: 600px;
+    min-width: 280px;
+    color: red;
+    font-size: 13px;
+    margin: 10px auto;
+}
