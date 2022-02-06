@@ -10,7 +10,7 @@
     padding: 10px 20px 10px 30px;
     border-radius: 10px;
     background: linear-gradient(to right,#C152FF ,#f2295b);
-    box-shadow: 1px 1px 1px 1px #9500ff;
+    box-shadow: 0.1px 0.1px 0.1px 0.1px #9500ff;
     /*border: 1px solid black;*/
 }
 body{
@@ -24,7 +24,7 @@ body{
     padding: 30px;
     margin: 10px auto;
     border-radius: 10px;
-    box-shadow: 0.3px 0.3px 0.3px 0.3px #9500ff;
+    box-shadow: 0.1px 0.1px 0.1px 0.1px #9500ff;
     background: linear-gradient(to right,#C152FF ,#f2295b);
 
 }
@@ -52,13 +52,8 @@ body{
     background: linear-gradient(to left,#C152FF ,#f2295b);
     border: none;
     padding: 10px;
-    box-shadow: 1.5px 1.5px 1.5px 1.5px #9500ff;
     border-radius: 3px;
     cursor: pointer;
-}
-
-#send_Button:hover{
-    box-shadow: 2px 2px 2px 2px #9500ff;
 }
 
 #result{
