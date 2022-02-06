@@ -3,7 +3,7 @@ function set_Style(){
     height = window.innerHeight;
     console.log(width);
     if (width < 900){
-        document.getElementsByClassName("title").style = "font-size: smaller";
+        document.getElementById("title_Style").style.fontSize = "smaller";
     }
 }
 

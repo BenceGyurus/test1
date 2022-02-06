@@ -51,7 +51,7 @@ class Questions{
     static question_Data = {};
 
     static add_Title(index){
-        return Html_Items.h_Tag("", this.question_Data[index], "title", 2);
+        return Html_Items.h_Tag("title_Style", this.question_Data[index], "title", 2);
     }
 
     static create_Div(datas){
