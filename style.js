@@ -6,3 +6,5 @@ function set_Style(){
         document.getElementsByClassName(".title").style = "font-size: 20px";
     }
 }
+
+set_Style()
