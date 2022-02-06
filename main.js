@@ -198,7 +198,7 @@ function send(){
             }
         }
         if (!errors.length){
-            element_The_Result();
+            //element_The_Result();
         }
     }
 }
