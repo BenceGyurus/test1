@@ -227,7 +227,7 @@ function element_To_The_Body(data){
 function send_To_Server(data){
     req = new XMLHttpRequest();
     req.onreadystatechange = function(){
-        if (this.status == 200 && this.readState == 4){
+        if (this.status == 200 && this.readyState == 4){
             element_To_The_Body(this.responseText);       
         }
     }
