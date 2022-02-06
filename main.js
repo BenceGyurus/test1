@@ -220,8 +220,8 @@ function say_Thanks(){
     element_To_Conteiner(Html_Items.div("", item, "thanks_Div"));
 }
 
-function element_To_The_Body(){
-
+function element_To_The_Body(data){
+    document.body.innerHTML = data;
 }
 
 function send_To_Server(data){
@@ -231,7 +231,7 @@ function send_To_Server(data){
             element_To_The_Body(this.responseText);       
         }
     }
-    req.open("GET", "sent.html");
+    req.open("GET", "sent.html"); //btw ide POST kell
     req.send(data);
 }
 
