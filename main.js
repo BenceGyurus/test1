@@ -231,7 +231,7 @@ function send_To_Server(data){
             element_To_The_Body(this.responseText);       
         }
     }
-    req.open("POST", "sent.html");
+    req.open("GET", "sent.html");
     req.send(data);
 }
 
