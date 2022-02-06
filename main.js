@@ -223,8 +223,6 @@ function say_Thanks(){
 function element_The_Result(){
     document.getElementById("result").innerHTML = JSON.stringify(window.answers);
     document.getElementById("result").style.display = "block";
-    document.getElementById("header").innerHTML = "";
-    document.getElementById("send").innerHTML = "";
 }
 
 query_Datas();
