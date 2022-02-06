@@ -60,3 +60,14 @@ body{
 #send_Button:hover{
     box-shadow: 2px 2px 2px 2px;
 }
+
+#result{
+    display: none;
+    background: black;
+    color: white;
+    padding: 10px;
+    width: 80%;
+    max-width: 600px;
+    min-width: 280px;
+    border-radius: 20px;
+}

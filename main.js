@@ -200,4 +200,10 @@ function send(){
     }
 }
 
+
+function element_The_Result(){
+    document.getElementById("result").innerHTML = JSON.stringify(window.answers);
+    document.getElementById("result").style.display = "block";
+}
+
 query_Datas();
