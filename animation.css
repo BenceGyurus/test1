@@ -2,9 +2,9 @@
     font-family: Poppins;
     width: 100%;
     border: 0;
-    border-bottom: 2px solid #4d4d4d;
+    border-bottom: 2px solid white;
     outline: 0;
-    color: #4d4d4d;
+    color: white;
     padding: 7px 0;
     background: transparent;
     transition: border-color 0.2s;
@@ -20,7 +20,7 @@
     top: 0;
     display: block;
     transition: 0.2s;
-    color: #4d4d4d;
+    color: white;
     font-size: 18px;
 
 }
