@@ -120,8 +120,8 @@ class details{
 }
 
 function main(all_Datas){
-    all_Data = JSON.parse(all_Datas);
-    console.log(all_Data);
+    all_Datas = JSON.parse(all_Datas);
+    console.log(all_Datas);
     if (all_Datas.questions){
         //type_Of_Questions = [["short_Answer", Questions.short_Answer], ["radiobutton", Questions.radiobuttons]];
         for (let i = 0; i < all_Datas.questions.length; i++){
