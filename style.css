@@ -15,7 +15,9 @@ body{
     background: linear-gradient(to right, #f5a2e8, #a2caf5);
 }
 .grid_Div{
-    width: 600px;
+    width: 80%;
+    max-width: 600px;
+    min-width: 400px;
     margin: 10px auto;
     padding: 30px;
     margin: 10px auto;
