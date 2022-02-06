@@ -72,3 +72,12 @@ body{
     border-radius: 20px;
     margin: 10px auto;
 }
+
+.thanks_Div{
+    width: 80%;
+    max-width: 600px;
+    min-width: 280px;
+    position: absolute;
+    margin: 10px auto;
+    top: 50%;
+}
