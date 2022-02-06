@@ -34,3 +34,24 @@ body{
     width: max-content;
     margin: 0px auto 20px auto;
 }
+
+#send{
+    width:max-content;
+    position: relative;
+    left: 65%;
+    margin-top: 30px;
+}
+#send_Button{
+    width: 100px;
+    margin: 10px;
+    background: linear-gradient(to right, #cfe5ff, #d3b3fc);
+    border: none;
+    padding: 10px;
+    box-shadow: 1.5px 1.5px 1.5px 1.5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#send_Button:hover{
+    box-shadow: 2px 2px 2px 2px;
+}

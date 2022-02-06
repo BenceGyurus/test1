@@ -1,18 +1,19 @@
-{
-    "questions": [
-        {
-            "structure":{
-                "type": "radiobutton",
-                "title": "1",
-                "question": "Whats your age?",
-                "select" : ["10-15", "16-18", "18-25", "25-30", "30+"]
-                },
-            "style":{
-                "color": "black",
-                "background": "white",
-                "font-size": "15px",
-                "font-weight": "bold" 
-                }  
+{"questions":
+            [{
+                    "type": "short_Answer",
+                    "title": "",
+                    "question": "Mi a Discord neved? (pl.: Bence#7020)",
+                    "placeholder" : "Discord név"
+            },
+            {
+                "type": "short_Answer",
+                "title": "",
+                "question": "Mi az email címed?",
+                "placeholder" : "Email cím"
         }
-    ]
-}
+        ],
+        "details": {
+            "title": "AMG - Genopets Whitelist",
+            "description": "Ezt a lapot töltsétek ki kérlek, ha jelentkeznétek a Genopets Whitelist-re. Mivel periodikusan kapjuk meg a hozzáféréseket, ezért ahogy kapjuk úgy osztjuk ki őket."
+        }
+    }
