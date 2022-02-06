@@ -198,6 +198,7 @@ function send(){
             }
         }
         if (!errors.length){
+            say_Thanks();
             //element_The_Result();
         }
     }
@@ -207,7 +208,7 @@ function say_Thanks(){
     let item = Html_Items.h_Tag("","Köszönjük, hogy kitöltötted!", "thanks", 1);
     item += Html_Items.h_Tag("", "Már nincs több dolgod :)", "thanks",2);
     clear_Conteiner();
-    element_To_Conteiner(Html_Items("", item, "thanks_Div"));
+    element_To_Conteiner(Html_Items.div("", item, "thanks_Div"));
 }
 
 
