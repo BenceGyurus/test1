@@ -82,3 +82,10 @@ body{
     top: 50%;
     left: 50%;
 }
+
+.thanks{
+    width: 80%;
+    max-width: 600px;
+    min-width: 280px;
+    margin: 10px auto;
+}
