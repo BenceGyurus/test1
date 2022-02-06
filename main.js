@@ -197,6 +197,9 @@ function send(){
                 errors.push("Az összes mező kitöltése kötelező");
             }
         }
+        if (!errors.length){
+            element_The_Result();
+        }
     }
 }
 
