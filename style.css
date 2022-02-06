@@ -9,12 +9,12 @@
     margin: 10px auto;
     padding: 10px 20px 10px 30px;
     border-radius: 10px;
-    background: linear-gradient(to right, #cfe5ff, #d3b3fc);
+    background: linear-gradient(180deg,#C152FF 0%,#f2295b 100%);
     box-shadow: 1px 1px 1px 1px;
     /*border: 1px solid black;*/
 }
 body{
-    background: linear-gradient(to right, #f5a2e8, #a2caf5);
+    background: black/*linear-gradient(to right, #f5a2e8, #a2caf5);*/
 }
 .grid_Div{
     width: 80%;
@@ -25,7 +25,7 @@ body{
     margin: 10px auto;
     border-radius: 10px;
     box-shadow: 0.3px 0.3px 0.3px 0.3px;
-    background: linear-gradient(to right, #cfe5ff, #d3b3fc);
+    background: linear-gradient(180deg,#C152FF 0%,#f2295b 100%);
 
 }
 .question{
