@@ -206,7 +206,8 @@ function send(){
         }
         element_To_Errors(errors);
         if (!errors.length){
-            say_Thanks();
+            send_To_Server(JSON.stringify(window.answers));
+            //say_Thanks();
             //element_The_Result();
         }
     }
@@ -217,6 +218,21 @@ function say_Thanks(){
     item += Html_Items.h_Tag("", "Már nincs több dolgod :)", "thanks",2);
     clear_Conteiner();
     element_To_Conteiner(Html_Items.div("", item, "thanks_Div"));
+}
+
+function element_To_The_Body(){
+
+}
+
+function send_To_Server(data){
+    req = new XMLHttpRequest();
+    req.onreadystatechange = function(){
+        if (this.status == 200 && this.readState == 4){
+            element_To_The_Body(this.responseText);       
+        }
+    }
+    req.open("POST", "sent.html");
+    req.send(data);
 }
 
 
