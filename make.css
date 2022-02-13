@@ -61,3 +61,68 @@ label{
     width: max-content;
     margin: 10px auto;
 }
+
+.grid_Div{
+    width: 40%;
+    margin: 80px auto;
+    display: block;
+    border: 2px solid #919191;
+    border-radius: 30px;
+}
+
+.answer{
+    width: 60%;
+    display: block;
+    margin: 10px auto 5px auto;
+    font-size: 18px;
+    border: none;
+    border: 1px solid #919191;
+    outline: none;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 3px solid #919191;
+    padding: 7px;
+}
+
+.delete_Button{
+    color: white;
+    background-color: red;
+    border: 1px solid white;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    font-size: 11px;
+    float: right;
+    margin: 10px;
+    padding: 0px;
+    cursor:pointer;
+}
+
+.input_Delete_Button{
+    color: white;
+    background-color: red;
+    border: 1px solid white;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    font-size: 11px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    padding: 0px;
+    cursor:pointer;
+    display: block;
+}
+
+.add_Button{
+    display: block;
+    margin: 10px auto;
+    width: 21px;
+    height: 21px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 100%;
+    padding: 0px;
+    text-align: center;
+    border: 1px solid #919191;
+}

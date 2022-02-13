@@ -1,17 +1,5 @@
 var answers = [];
 
-function random_Id(length){
-    x = "";
-    for (let i = 0; i<length; i++){
-        x += Math.ceil(Math.random()*10);
-    }
-    return x;
-}
-
-function element_To_Conteiner(data){
-    document.getElementById("conteiner").innerHTML += data
-}
-
 function clear_Conteiner(){
     document.getElementById("conteiner").innerHTML = "";
 }

@@ -17,4 +17,19 @@ class Html_Items{
     static p_Tag(id, data, class_Name){
         return `<p id = "${id}" class = "${class_Name}">${data}</p>`;
     }
+    static button(id, value, class_Name,onclick){
+        return `<input type = "button" class = "${class_Name}" id = "${id}" value = "${value}" onclick = "${onclick}">`;
+    }
+}
+
+function element_To_Conteiner(data){
+    document.getElementById("conteiner").innerHTML += data
+}
+
+function random_Id(length){
+    x = "";
+    for (let i = 0; i<length; i++){
+        x += Math.ceil(Math.random()*10);
+    }
+    return x;
 }
