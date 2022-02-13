@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +7,11 @@
     <title>Elkészítés</title>
     <link rel="stylesheet" href="make.css">
     <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="beta.css">
 </head>
 <body>
     <div id = "header">
-        <h1>Űrlap készítés</h1>
+        <h1>Űrlap készítés<label class = "beta">Beta</label></h1>
     </div>
     <div id = "datas">
         <label>Az űrlap címe</label>
@@ -19,13 +20,21 @@
         <br />
         <label>Az űrlap leírása</label>
         <br />
-        <textarea id="decription" class = "textarea"></textarea>
+        <textarea id="description" class = "textarea"></textarea>
     </div>
     <div id = "conteiner">
 
     </div>
     <div id = "control_Panel">
-        <input type="button" class = "control_Button" value="+" onclick = "">
+        <input type="button" class = "control_Button" value="+" onclick = "add_New()">
+    </div>
+    <div id = "add_New">
+        <input type = "button" value = "X" class = "delete_Button" onclick = "close_Window()" />
+        <div id = "buttons">
+        <input type = "button" value = "Felelet választó" class = "choose_Button" onclick = "choose('radiobutton')"/>
+        <input type = "button" value = "Rövid válasz" class = "choose_Button" onclick = "choose('short_Answer')">
+        <button disabled="disabled" class = "choose_Button">Hosszú válasz <label class = "coming_Soon">Hamarosan érkezik</label></button>
+        </div>
     </div>
 </body>
 <script src = "make.js"></script>

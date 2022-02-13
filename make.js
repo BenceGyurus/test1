@@ -45,7 +45,7 @@ class add_Question{
         window.all_Items[window.div_Ids[window.div_Ids.length-1]] = {
             title: title_Id,
             question: ids,
-            type : "radio",
+            type : "radiobutton",
             question_Div: this.question_Div_Id
         }
         element_Datas(d);
@@ -124,6 +124,16 @@ function element_Datas(all_Values){
     }
 }
 
+function add_New(){
+    let window = document.getElementById("add_New");
+    window.style.display = "block";
+}
+
+function close_Window(){
+    let window = document.getElementById("add_New");
+    window.style.display = "none";
+}
+
 function get_Datas(){
     all_Values = {};
     for (let i = 0; i < window.div_Ids.length; i++){
@@ -144,4 +154,47 @@ function get_Datas(){
         }
     }
     return all_Values;
+}
+
+function choose(type){
+    if (type == "radiobutton"){
+        add_Question.radio_Button_Question();
+    }
+    else if(type == "short_Answer"){
+        add_Question.short_Answer();
+    }
+    let window = document.getElementById("add_New");
+    window.style.display = "none";
+}
+
+function get_Value(id){
+    return document.getElementById(id).value
+}
+
+function get_All_Data(){
+    let questions_Json = {
+        details: {
+        title: get_Value("main_Title"),
+        description: document.getElementById("description").value
+        },
+    questions: []
+    };
+    for (let i = 0; i < window.div_Ids.length; i++){
+        if (window.div_Ids[i]){
+        json = {
+                question: get_Value(window.all_Items[window.div_Ids[i]].title),
+                placeholder: get_Value(window.all_Items[window.div_Ids[i]].title)
+            }    
+            if (window.all_Items[window.div_Ids[i]].type == "radiobutton"){
+                json["select"] = [];
+                for (let j = 0; j < window.all_Items[window.div_Ids[i]].question.length; j++){
+                    if (window.all_Items[window.div_Ids[i]].question[j]){
+                        json["select"].push(get_Value(window.all_Items[window.div_Ids[i]].question[j][0]));
+                    }
+                }
+            }
+            questions_Json.questions.push(json);
+        }
+    }
+    return JSON.stringify(questions_Json);
 }
