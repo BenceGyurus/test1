@@ -182,6 +182,8 @@ function get_All_Data(){
     for (let i = 0; i < window.div_Ids.length; i++){
         if (window.div_Ids[i]){
         json = {
+                type: window.all_Items[window.div_Ids[i]].type,
+                title: "",
                 question: get_Value(window.all_Items[window.div_Ids[i]].title),
                 placeholder: get_Value(window.all_Items[window.div_Ids[i]].title)
             }    
